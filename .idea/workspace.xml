@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c4cbf4c-c188-486a-baa5-b28608e598a4" name="Changes" comment="etch a sketch code">
-      <change afterPath="$PROJECT_DIR$/turtle_race.py" afterDir="false" />
+    <list default="true" id="6c4cbf4c-c188-486a-baa5-b28608e598a4" name="Changes" comment="turtle race">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turtle_race.py" beforeDir="false" afterPath="$PROJECT_DIR$/turtle_race.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +67,20 @@
       <option name="project" value="LOCAL" />
       <updated>1744956223596</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="turtle race">
+      <option name="closed" value="true" />
+      <created>1744959049099</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744959049099</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="etch a sketch code" />
-    <option name="LAST_COMMIT_MESSAGE" value="etch a sketch code" />
+    <MESSAGE value="turtle race" />
+    <option name="LAST_COMMIT_MESSAGE" value="turtle race" />
   </component>
 </project>

@@ -22,30 +22,34 @@ def go_to_start_line(turt_list):
     x = 20 - screen_width/2
     y = int((-no_of_turtle * spacing_between_turtles) / 2)
     for turt in turt_list:
-        y = y +  spacing_between_turtles
+        y = y + spacing_between_turtles
         turt.goto(x=x, y=y)
 
     #turt.goto(x=pos_x_y[0], y= pos_x_y[1])
 
 
+def game_start():
+    turtles = []
+    for color in colors:
+        turtles.append(create_turtle(color))
 
-turtles = []
-for color in colors:
-    turtles.append(create_turtle(color))
+    go_to_start_line(turtles)
+    user_bet = screen.textinput(title="Turtle Race Ready!!", prompt=f"Please choose your turtle,by choosing color {colors}")
+    is_race_on = True
+    while is_race_on:
+        for turt in turtles:
+            random_distance = random.randint(0,10)
+            turt.forward(random_distance)
+            turt_x_posittion = turt.xcor()
+            if turt_x_posittion >= int(screen_width/2) - 20:
+                is_race_on = False
+                if turt.pencolor() == user_bet:
+                    screen.title(titlestring=f"You have won the race!!!")
+                    print("You have won the race!!")
+                else:
+                    screen.title(titlestring=f"You have lost the game. {turt.pencolor()} has won!!")
+                    print(f"Sorry you have lost the race. {turt.pencolor()} has won!!")
 
-go_to_start_line(turtles)
 
-
-is_race_on = True
-
-while is_race_on:
-    for turt in turtles:
-        random_distance = random.randint(0,10)
-        turt.forward(random_distance)
-        turt_x_posittion = turt.xcor()
-        if turt_x_posittion >= int(screen_width/2) - 20:
-            is_race_on = False
-            print(f"Winner is : {turt.pencolor()} turtle")
-
-
+game_start()
 screen.exitonclick()
